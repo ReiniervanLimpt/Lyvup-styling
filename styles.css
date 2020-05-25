@@ -153,6 +153,7 @@ button{
 }
 
 .button-usage button{
+  transition: all .2s ease-in-out;
   color: white;
   background-color: #17686d;
   border: 5px solid #17686d;
@@ -161,6 +162,7 @@ button{
 .button-usage button:hover{
   color: white;
   background-color: #114c4c;
+  transform: scale(1.05);
 }
 
 .button-usage button:focus{
