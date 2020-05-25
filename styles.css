@@ -82,19 +82,52 @@ button{
 }
 
 .complimentButton{
+  transition: all .2s ease-in-out;
+  box-sizing:border-box;
+  border: 5px solid #E51F4F;
   background-color: #E51F4F;
 }
 
 .goalsButton{
+  transition: all .2s ease-in-out;
+  box-sizing:border-box;
+  border: 5px solid #34b6dd;
   background-color: #34b6dd;
 }
 
 .defaultButton{
+  transition: all .2s ease-in-out;
+  box-sizing:border-box;
+  border: 5px solid #17686d;
   background-color: #17686d;
 }
 
 .activeButton{
+  transition: all .2s ease-in-out;
+  box-sizing:border-box;
+  border: 5px solid #f6ae1a;
   background-color: #f6ae1a;
+}
+
+.complimentButton:hover{
+  background-color: #BA1C4A;
+  transform: scale(1.05);
+
+}
+
+.goalsButton:hover{
+  background-color: #2da0ba;
+  transform: scale(1.05);
+}
+
+.defaultButton:hover{
+  background-color: #114c4c;
+  transform: scale(1.05);
+}
+
+.activeButton:hover{
+  background-color: #d18b19;
+  transform: scale(1.05);
 }
 
 .filterButton{
@@ -122,12 +155,19 @@ button{
 .button-usage button{
   color: white;
   background-color: #17686d;
+  border: 5px solid #17686d;
+}
+
+.button-usage button:hover{
+  color: white;
+  background-color: #114c4c;
 }
 
 .button-usage button:focus{
   outline: none;
   color: white;
   background-color: #f6ae1a;
+  border: 5px solid #f6ae1a;
 }
 
 #request_count{
