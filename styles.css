@@ -81,6 +81,10 @@ button{
   height: 50px;
 }
 
+button:hover{
+  cursor: pointer;
+}
+
 .complimentButton{
   transition: all .2s ease-in-out;
   box-sizing:border-box;
