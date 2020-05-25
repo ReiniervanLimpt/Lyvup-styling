@@ -1,0 +1,219 @@
+@font-face {
+    font-family: publicSans;
+    src: url('./fonts/publicSans/PublicSans-Light.ttf');
+}
+
+@font-face {
+    font-family: publicSans-bold;
+    src: url('./fonts/publicSans/PublicSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: bitter;
+    src: url('./fonts/Bitter/Bitter-Regular.ttf');
+}
+
+
+
+body{
+  font-size: 16px;
+}
+
+.button-container{
+  margin: auto;
+  width: 60%;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid dimgray;
+}
+
+.button-usage {
+  padding-bottom: 20px;
+  margin: auto;
+  width: 60%;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid dimgray;
+}
+
+p{
+  font-family: 'publicSans', sans-serif;
+  width: 100%;
+  font-size: 1em;
+  line-height: 200%;
+}
+
+h1{
+  width: 100%;
+  font-size: 3em;
+  font-family: 'bitter', serif;
+}
+
+h2{
+
+  font-size: 2.5em;
+  font-family: 'publicSans', sans-serif;
+}
+
+h3{
+
+  font-size: 2em;
+  font-family: 'publicSans', sans-serif;
+}
+
+h4{
+
+  font-size: 1.5em;
+  font-family: 'publicSans', sans-serif;
+}
+
+button{
+  width:24%;
+  font-family: 'publicSans', sans-serif;
+  font-size: 1em;
+  margin: 0.5%;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  border: none;
+  height: 50px;
+}
+
+.complimentButton{
+  background-color: #E51F4F;
+}
+
+.goalsButton{
+  background-color: #34b6dd;
+}
+
+.defaultButton{
+  background-color: #17686d;
+}
+
+.activeButton{
+  background-color: #f6ae1a;
+}
+
+.filterButton{
+  background-color: #000;
+}
+
+.button-container p{
+  width: 20%;
+  margin: 2.5%;
+  text-align: center;
+}
+
+.button-container p:nth-of-type(6){
+  width: 100%;
+  padding: 5% 20% 5% 20%;
+  margin: 0%;
+  text-align: left;
+}
+
+.button-container p:nth-of-type(7){
+  width: 100%;
+  text-align: left;
+}
+
+.button-usage button{
+  color: white;
+  background-color: #17686d;
+}
+
+.button-usage button:focus{
+  outline: none;
+  color: white;
+  background-color: #f6ae1a;
+}
+
+#request_count{
+  color: #000;
+}
+
+
+.bodyTextBold {
+    font-family: 'publicSans-bold';
+    font-size: 16px;
+    width: 60%;
+    vertical-align: middle;
+}
+
+.buttonMeta {
+    font-family: 'publicSans-bold';
+    font-size: 13px;
+    display: inline;
+    vertical-align: middle;
+}
+
+span {
+    font-family: 'publicSans';
+    font-size: 14px;
+    color: dimgray;
+    margin: 0;
+    padding: 0px;
+}
+
+.spanFirst {
+    margin-right: 5em;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted dimgray;
+    align-items: center;
+}
+
+.flex h1, .flex h2, .flex h3, .flex h4, .flex p{
+  width:60%;
+}
+
+.flex2 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted dimgray;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.flex:last-child {
+    border-bottom: none;
+}
+
+.container {
+    width: 60%;
+    padding-bottom: 2em;
+    display: block;
+    margin-bottom: 150px;
+    border-bottom: 1px solid dimgray;
+    margin: auto;
+}
+
+.blue {
+    background-color: #34b6dd;
+}
+
+.turquoise {
+    background-color: #17686d;
+}
+
+.magenta {
+    background-color: #e51f4f;
+}
+
+.yellow {
+    background-color: #f6ae1a;
+}
+
+.whiteText {
+    color: white;
+}
+
+.blackText {
+    color: black;
+}
