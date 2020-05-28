@@ -11,122 +11,239 @@
 </head>
 
 <body>
-  <div class="button-container">
-    <h1>Button styling</h1>
-    <button class="complimentButton" type="button">Compliments</button>
-    <button class="goalsButton" type="button">Goals</button>
-    <button class="defaultButton" type="button">Default</button>
-    <button class="activeButton" type="button">Active</button>
-    <p>compliments button; Magenta/rood: this color corresponds with compliments functionality throughout the app</p>
-    <p>goals button; Hemels-blauw: this color corresponds with goals functionality throughout the app</p>
-    <p>passive green button</p>
-    <p>active yellow button</p>
-    <button class="filterButton" type="button">filter</button>
-    <p>filter buttons are black</p>
-    <p>All buttons will have the same width if they have the same priority, no more than 4 buttons can be displayed next to eachother and together they use up the entire width of the container (24-25%) their height is a fixed 50px</p>
-    <h3>CSS styles</h3>
-    <p>inspect elements for CSS values.</p>
-  </div>
-
-  <div class="button-usage">
-    <h2>Active / inactive buttons</h2>
-    <p>Disabled buttons get the default styling, Active buttons get the active button styling.</p>
-    <button type="button">Verstuurd <span id="request_count">(0)</span></button>
-    <button type="button">Ontvangen <span id="request_count">(0)</span></button>
-    <button type="button">Aangevraagd <span id="request_count">(0)</span></button>
-  </div>
-
-  <div class="container">
-    <h1>Typography</h1>
-    <h2 class="h2">Type scale</h2>
-
-    <div class="flex">
-      <h1>heading one</h1>
-      <span class="spanFirst">3 em</span>
-      <span>bitter</span>
-    </div>
-    <div class="flex">
-      <h2>heading two</h2>
-      <span>2.5 em</span>
-      <span>publicSans light</span>
-    </div>
-    <div class="flex">
-      <h3>heading three</h3>
-      <span>2 em</span>
-      <span>publicSans light</span>
+  <div id="content__container">
+    <div class="button-container">
+      <h1>Button styling</h1>
+      <button class="complimentButton" type="button">Compliments</button>
+      <button class="goalsButton" type="button">Add goals</button>
+      <button class="defaultButton" type="button">Default</button>
+      <button class="activeButton" type="button">Active</button>
+      <p>compliments button; Magenta/rood: this color corresponds with compliments functionality throughout the app</p>
+      <p>goals button; Hemels-blauw: this color corresponds with goals functionality throughout the app</p>
+      <p>passive green button</p>
+      <p>active yellow button</p>
+      <button class="filterButton" type="button">filter</button>
+      <p>filter buttons are black</p>
+      <p>All buttons will have the same width if they have the same priority, no more than 4 buttons can be displayed next to eachother and together they use up the entire width of the container (24-25%) their height is a fixed 50px</p>
+      <h3>CSS styles</h3>
+      <p>inspect elements for CSS values.</p>
     </div>
 
-    <div class="flex">
-      <h4>heading four</h4>
-      <span>1.5 em</span>
-      <span>publicSans light</span>
+    <div class="button-usage">
+      <h2>Active / inactive buttons</h2>
+      <p>Disabled buttons get the default styling, Active buttons get the active button styling.</p>
+      <button type="button">Verstuurd <span id="request_count">(0)</span></button>
+      <button type="button">Ontvangen <span id="request_count">(0)</span></button>
+      <button type="button">Aangevraagd <span id="request_count">(0)</span></button>
     </div>
 
-    <div class="flex">
-      <p>body text</p>
-      <span>1 em / 16 px</span>
-      <span>publicSans light</span>
+    <div class="container">
+      <h1>Typography</h1>
+      <h2 class="h2">Type scale</h2>
+
+      <div class="flex">
+        <h1>heading one</h1>
+        <span class="spanFirst">3 em</span>
+        <span>bitter</span>
+      </div>
+      <div class="flex">
+        <h2>heading two</h2>
+        <span>2.5 em</span>
+        <span>publicSans light</span>
+      </div>
+      <div class="flex">
+        <h3>heading three</h3>
+        <span>2 em</span>
+        <span>publicSans light</span>
+      </div>
+
+      <div class="flex">
+        <h4>heading four</h4>
+        <span>1.5 em</span>
+        <span>publicSans light</span>
+      </div>
+
+      <div class="flex">
+        <p>body text</p>
+        <span>1 em / 16 px</span>
+        <span>publicSans light</span>
+      </div>
+
+      <div class="flex">
+        <p class="bodyTextBold">body bold</p>
+        <span>1 em / 16 px</span>
+        <span>publicSans bold</span>
+      </div>
+
+      <div class="flex">
+        <p class="buttonMeta">button & meta</p>
+        <span>13 px</span>
+        <span>publicSans bold</span>
+      </div>
     </div>
 
-    <div class="flex">
-      <p class="bodyTextBold">body bold</p>
-      <span>1 em / 16 px</span>
-      <span>publicSans bold</span>
+    <div class="container">
+      <h2 class="h2">Colors</h2>
+
+      <div class="flex2 blue whiteText">
+        <p>Hemels-blauw: #34b6dd
+        </p>
+        <span class="whiteText">white text</span>
+        <span class="blackText">black text </span>
+      </div>
+
+      <div class="flex2 turquoise whiteText">
+        <p>Donker_turqoise: #17686d
+        </p>
+        <span class="whiteText">white text</span>
+        <span class="blackText">black text </span>
+      </div>
+
+      <div class="flex2 magenta whiteText">
+        <p>Magenta/rood: #e51f4f
+        </p>
+        <span class="whiteText">white text</span>
+        <span class="blackText">black text </span>
+      </div>
+
+      <div class="flex2 yellow whiteText">
+        <p>Geel: #f6ae1a
+        </p>
+        <span class="whiteText">white text</span>
+        <span class="blackText">black text </span>
+      </div>
     </div>
 
-    <div class="flex">
-      <p class="buttonMeta">button & meta</p>
-      <span>13 px</span>
-      <span>publicSans bold</span>
+    <div class="container">
+      <h2 class="h2">Paragraph</h2>
+
+      <p>The default body text is 16px. For optimum reading the body text has a lineheight of 200%.</p>
     </div>
-  </div>
 
-  <div class="container">
-    <h2 class="h2">Colors</h2>
+    <div class="container">
+      <h2 class="h2">Icons</h2>
 
-    <div class="flex2 blue whiteText">
-      <p>Hemels-blauw: #34b6dd
+      <p>For icons we don't use a font. Because if the font for some reason doesn't get loaded in, the user won't see an icon.
       </p>
-      <span class="whiteText">white text</span>
-      <span class="blackText">black text </span>
-    </div>
-
-    <div class="flex2 turquoise whiteText">
-      <p>Donker_turqoise: #17686d
-      </p>
-      <span class="whiteText">white text</span>
-      <span class="blackText">black text </span>
-    </div>
-
-    <div class="flex2 magenta whiteText">
-      <p>Magenta/rood: #e51f4f
-      </p>
-      <span class="whiteText">white text</span>
-      <span class="blackText">black text </span>
-    </div>
-
-    <div class="flex2 yellow whiteText">
-      <p>Geel: #f6ae1a
-      </p>
-      <span class="whiteText">white text</span>
-      <span class="blackText">black text </span>
     </div>
   </div>
+  <div id="containers__container">
+    <div class="container">
+      <h1>Containers</h1>
 
-  <div class="container">
-    <h2 class="h2">Paragraph</h2>
+      <h3>Set rules for big container spacing:</h3>
 
-    <p>The default body text is 16px. For optimum reading the body text has a lineheight of 200%.</p>
-  </div>
+      <div id="goals__container">
+        <h1>Goals</h1>
+      </div>
 
-  <div class="container">
-    <h2 class="h2">Icons</h2>
+      <table style="width:100%">
+        <tr>
+          <th>Property</th>
+          <th>Value</th>
+        </tr>
+        <tr>
+          <td>margin</td>
+          <td>10 px</td>
+        </tr>
+        <tr>
+          <td>padding</td>
+          <td>10 px</td>
+        </tr>
+        <tr>
+          <td>border-radius</td>
+          <td>10 px</td>
+        </tr>
+        <tr>
+          <td>background-color</td>
+          <td>white</td>
+        </tr>
+      </table>
 
-    <p>For icons we don't use a font. Because if the font for some reason doesn't get loaded in, the user won't see an icon.
-    </p>
-  </div>
+      <h3>Set rules for small container spacing:</h3>
 
+      <div id="setGoals__container">
+        <article class="goal__container">
+          <div class="goal-buttons__container">
+            <img src="./images/goals_icon.svg" alt="">
+            <span class="goal-type">Communiceren</span><span class="goal-type2">Verbeteren</span><span class="goal-estimate">12 uur resterend</span>
+          </div>
+          <div>
+            <p>Communicate more over slack</p>
+          </div>
+        </article>
+      </div>
 
+      <table style="width:100%">
+        <tr>
+          <th>Property</th>
+          <th>Value</th>
+        </tr>
+        <tr>
+          <td>margin</td>
+          <td>10 px</td>
+        </tr>
+        <tr>
+          <td>padding</td>
+          <td>10 px</td>
+        </tr>
+        <tr>
+          <td>border-radius</td>
+          <td>10 px</td>
+        </tr>
+        <tr>
+          <td>background-color</td>
+          <td>white</td>
+        </tr>
+        <tr>
+          <td>box-shadow</td>
+          <td>0px 2px 0px 1px #e5e5e5</td>
+        </tr>
+      </table>
+
+      <h3>Set rules for nested containers</h3>
+
+      <div id="goals__container">
+        <div class="goalsHead">
+          <h1>Goals</h1>
+        </div>
+        <div id="setGoals__container">
+          <article class="goal__container">
+            <div class="flex">
+              <img src="./images/goals_icon.svg" alt="">
+              <div class="goal-buttons__container">
+                <span class="goal-type">Samenwerken</span><span class="goal-type2">Verbeteren</span><span class="goal-estimate">12 uur resterend</span>
+              </div>
+            </div>
+            <div>
+              <p>Beter worden in samen werken door vaker te communiceren</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <p>Containers nested inside another container get grouped inside another container with a light grey background and border radius.</p>
+
+      <table style="width:100%">
+        <tr>
+          <th>Property</th>
+          <th>Value</th>
+        </tr>
+        <tr>
+          <td>padding</td>
+          <td>10 px</td>
+        </tr>
+        <tr>
+          <td>background-color</td>
+          <td>#f7f7f7</td>
+        </tr>
+        <tr>
+          <td>border-radius</td>
+          <td>10 px</td>
+        </tr>
+      </table>
+
+    </div>
 </body>
 
 </html>
