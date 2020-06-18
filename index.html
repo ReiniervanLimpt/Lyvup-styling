@@ -9,241 +9,388 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
+<div id="page">
+  <header>
+    <a href="/"><img id="logo" src="./images/lyvupLogo.png" alt=""></a>
 
-<body>
-  <div id="content__container">
-    <div class="button-container">
-      <h1>Button styling</h1>
-      <button class="complimentButton" type="button">Compliments</button>
-      <button class="goalsButton" type="button">Add goals</button>
-      <button class="defaultButton" type="button">Default</button>
-      <button class="activeButton" type="button">Active</button>
-      <p>compliments button; Magenta/rood: this color corresponds with compliments functionality throughout the app</p>
-      <p>goals button; Hemels-blauw: this color corresponds with goals functionality throughout the app</p>
-      <p>passive green button</p>
-      <p>active yellow button</p>
-      <button class="filterButton" type="button">filter</button>
-      <p>filter buttons are black</p>
-      <p>All buttons will have the same width if they have the same priority, no more than 4 buttons can be displayed next to eachother and together they use up the entire width of the container (24-25%) their height is a fixed 50px</p>
-      <h3>CSS styles</h3>
-      <p>inspect elements for CSS values.</p>
-    </div>
+    <div id="get-started"></div>
 
-    <div class="button-usage">
-      <h2>Active / inactive buttons</h2>
-      <p>Disabled buttons get the default styling, Active buttons get the active button styling.</p>
-      <button type="button">Verstuurd <span id="request_count">(0)</span></button>
-      <button type="button">Ontvangen <span id="request_count">(0)</span></button>
-      <button type="button">Aangevraagd <span id="request_count">(0)</span></button>
-    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#colorSection" class="active-nav" {{/if}}>
+            <p>Color usage</p>
+          </a>
+        </li>
+        <li>
+          <a href="#typographySection" class="active-nav" {{/if}}>
+            <p>Typography</p>
+          </a>
+        </li>
+        <li>
+          <a href="#iconsSection" class="active-nav" {{/if}}>
+            <p>Icons</p>
+          </a>
+        </li>
+        <li>
+          <a href="#containerSection" class="active-nav" {{/if}}>
+            <p>Containers</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="container">
-      <h1>Typography</h1>
-      <h2 class="h2">Type scale</h2>
+  <body>
+    <div id="content__container">
 
-      <div class="flex">
-        <h1>heading one</h1>
-        <span class="spanFirst">3 em</span>
-        <span>bitter</span>
-      </div>
-      <div class="flex">
-        <h2>heading two</h2>
-        <span>2.5 em</span>
-        <span>publicSans light</span>
-      </div>
-      <div class="flex">
-        <h3>heading three</h3>
-        <span>2 em</span>
-        <span>publicSans light</span>
-      </div>
+      <div class="container">
+        <h1 id="colorSection">Color usage</h1>
 
-      <div class="flex">
-        <h4>heading four</h4>
-        <span>1.5 em</span>
-        <span>publicSans light</span>
-      </div>
-
-      <div class="flex">
-        <p>body text</p>
-        <span>1 em / 16 px</span>
-        <span>publicSans light</span>
-      </div>
-
-      <div class="flex">
-        <p class="bodyTextBold">body bold</p>
-        <span>1 em / 16 px</span>
-        <span>publicSans bold</span>
-      </div>
-
-      <div class="flex">
-        <p class="buttonMeta">button & meta</p>
-        <span>13 px</span>
-        <span>publicSans bold</span>
-      </div>
-    </div>
-
-    <div class="container">
-      <h2 class="h2">Colors</h2>
-
-      <div class="flex2 blue whiteText">
-        <p>Hemels-blauw: #34b6dd
-        </p>
-        <span class="whiteText">white text</span>
-        <span class="blackText">black text </span>
-      </div>
-
-      <div class="flex2 turquoise whiteText">
-        <p>Donker_turqoise: #17686d
-        </p>
-        <span class="whiteText">white text</span>
-        <span class="blackText">black text </span>
-      </div>
-
-      <div class="flex2 magenta whiteText">
-        <p>Magenta/rood: #e51f4f
-        </p>
-        <span class="whiteText">white text</span>
-        <span class="blackText">black text </span>
-      </div>
-
-      <div class="flex2 yellow whiteText">
-        <p>Geel: #f6ae1a
-        </p>
-        <span class="whiteText">white text</span>
-        <span class="blackText">black text </span>
-      </div>
-    </div>
-
-    <div class="container">
-      <h2 class="h2">Paragraph</h2>
-
-      <p>The default body text is 16px. For optimum reading the body text has a lineheight of 200%.</p>
-    </div>
-
-    <div class="container">
-      <h2 class="h2">Icons</h2>
-
-      <p>For icons we don't use a font. Because if the font for some reason doesn't get loaded in, the user won't see an icon.
-      </p>
-    </div>
-  </div>
-  <div id="containers__container">
-    <div class="container">
-      <h1>Containers</h1>
-
-      <h3>Set rules for big container spacing:</h3>
-
-      <div id="goals__container">
-        <h1>Goals</h1>
-      </div>
-
-      <table style="width:100%">
-        <tr>
-          <th>Property</th>
-          <th>Value</th>
-        </tr>
-        <tr>
-          <td>margin</td>
-          <td>10 px</td>
-        </tr>
-        <tr>
-          <td>padding</td>
-          <td>10 px</td>
-        </tr>
-        <tr>
-          <td>border-radius</td>
-          <td>10 px</td>
-        </tr>
-        <tr>
-          <td>background-color</td>
-          <td>white</td>
-        </tr>
-      </table>
-
-      <h3>Set rules for small container spacing:</h3>
-
-      <div id="setGoals__container">
-        <article class="goal__container">
-          <div class="goal-buttons__container">
-            <img src="./images/goals_icon.svg" alt="">
-            <span class="goal-type">Communiceren</span><span class="goal-type2">Verbeteren</span><span class="goal-estimate">12 uur resterend</span>
+        <div class="blocks__container">
+          <div class="blocks">
+            <div id="red-block"></div>
+            <p>Magenta/rood: this color corresponds with compliments functionality throughout the app</p>
           </div>
-          <div>
-            <p>Communicate more over slack</p>
+          <div class="blocks">
+            <div id="blue-block"></div>
+            <p>Hemels-blauw: this color corresponds with goals functionality throughout the app</p>
           </div>
-        </article>
-      </div>
 
-      <table style="width:100%">
-        <tr>
-          <th>Property</th>
-          <th>Value</th>
-        </tr>
-        <tr>
-          <td>margin</td>
-          <td>10 px</td>
-        </tr>
-        <tr>
-          <td>padding</td>
-          <td>10 px</td>
-        </tr>
-        <tr>
-          <td>border-radius</td>
-          <td>10 px</td>
-        </tr>
-        <tr>
-          <td>background-color</td>
-          <td>white</td>
-        </tr>
-        <tr>
-          <td>box-shadow</td>
-          <td>0px 2px 0px 1px #e5e5e5</td>
-        </tr>
-      </table>
-
-      <h3>Set rules for nested containers</h3>
-
-      <div id="goals__container">
-        <div class="goalsHead">
-          <h1>Goals</h1>
+          <div class="blocks">
+            <div id="green-block"></div>
+            <p>Passive green: this color corresponds with that is not a compliment or a goal </p>
+          </div>
+          <div class="blocks">
+            <div id="yellow-block"></div>
+            <p>Active yellow: this color corresponds with everything that is an active state</p>
+          </div>
         </div>
-        <div id="setGoals__container">
+
+        <hr>
+
+        <h1 id="typographySection">Typography</h1>
+
+        <div class="flex">
+          <h1>heading one</h1>
+          <span class="spanFirst">3 em</span>
+          <span>bitter</span>
+        </div>
+        <div class="flex">
+          <h2>heading two</h2>
+          <span>2.5 em</span>
+          <span>publicSans light</span>
+        </div>
+        <div class="flex">
+          <h3>heading three</h3>
+          <span>2 em</span>
+          <span>publicSans light</span>
+        </div>
+
+        <div class="flex">
+          <h4>heading four</h4>
+          <span>1.5 em</span>
+          <span>publicSans light</span>
+        </div>
+
+        <div class="flex">
+          <p>body text</p>
+          <span>1 em / 16 px</span>
+          <span>publicSans light</span>
+        </div>
+
+        <div class="flex">
+          <p class="bodyTextBold">body bold</p>
+          <span>1 em / 16 px</span>
+          <span>publicSans bold</span>
+        </div>
+
+        <div class="flex">
+          <p class="buttonMeta">button & meta</p>
+          <span>13 px</span>
+          <span>publicSans bold</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2 class="h2">Colors</h2>
+
+        <div class="flex2 blue whiteText">
+          <p>Hemels-blauw: #34b6dd
+          </p>
+          <span class="whiteText">white text</span>
+          <span class="blackText">black text </span>
+        </div>
+
+        <div class="flex2 turquoise whiteText">
+          <p>Donker_turqoise: #17686d
+          </p>
+          <span class="whiteText">white text</span>
+          <span class="blackText">black text </span>
+        </div>
+
+        <div class="flex2 magenta whiteText">
+          <p>Magenta/rood: #e51f4f
+          </p>
+          <span class="whiteText">white text</span>
+          <span class="blackText">black text </span>
+        </div>
+
+        <div class="flex2 yellow whiteText">
+          <p>Geel: #f6ae1a
+          </p>
+          <span class="whiteText">white text</span>
+          <span class="blackText">black text </span>
+        </div>
+        <h2 class="h2">Paragraph</h2>
+
+        <p>The default body text is 16px. For optimum reading the body text has a lineheight of 200%.</p>
+
+        <hr>
+
+        <h1 id="iconsSection">Page icons / section items</h1>
+
+        <div id="page-icons__container">
+          <img src="./images/assessment_icon.svg" alt="">
+          <img src="./images/feedback_icon.svg" alt="">
+          <img src="./images/team_icon.svg" alt="">
+          <img src="./images/goals_icon.svg" alt="">
+          <img src="./images/praise_icon.svg" alt="">
+          <img src="./images/achievements_icon.svg" alt="">
+          <h4>Assesment</h4>
+          <h4>Feedback</h4>
+          <h4>Team</h4>
+          <h4>Goals</h4>
+          <h4>Compliments</h4>
+          <h4>Challenges</h4>
+        </div>
+        <hr>
+      </div>
+
+      <div id="containers__container">
+        <div class="container">
+          <h1 id="containerSection">Containers</h1>
+
+          <h3>Set rules for big container spacing:</h3>
+
+          <div id="goals__container">
+            <div class="container-head">
+              <img src="./images/assessment_icon.svg" alt="">
+              <h1>Heading</h1>
+            </div>
+          </div>
+
+          <table style="width:100%">
+            <tr>
+              <th>Property</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td>margin</td>
+              <td>10 px</td>
+            </tr>
+            <tr>
+              <td>padding</td>
+              <td>2.1em 3em 3em 3em</td>
+            </tr>
+            <tr>
+              <td>border-radius</td>
+              <td>10 px</td>
+            </tr>
+            <tr>
+              <td>background-color</td>
+              <td>white</td>
+            </tr>
+          </table>
+
+          <hr>
+
+          <h3>Set rules for small container spacing:</h3>
+
           <article class="goal__container">
-            <div class="flex">
-              <img src="./images/goals_icon.svg" alt="">
-              <div class="goal-buttons__container">
-                <span class="goal-type">Samenwerken</span><span class="goal-type2">Verbeteren</span><span class="goal-estimate">12 uur resterend</span>
-              </div>
+            <div class="goal-buttons__container">
+              <span class="goal-type">Communiceren</span>
+              <img src="./images/Improve.svg" alt=""><span class="goal-type2">Verbeteren</span><span class="goal-estimate">12 uur resterend</span>
             </div>
             <div>
-              <p>Beter worden in samen werken door vaker te communiceren</p>
+              <p>Communicate more over slack</p>
             </div>
           </article>
+
+          <table style="width:100%">
+            <tr>
+              <th>Property</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td>margin</td>
+              <td>10 px</td>
+            </tr>
+            <tr>
+              <td>padding</td>
+              <td>10 px</td>
+            </tr>
+            <tr>
+              <td>border-radius</td>
+              <td>10 px</td>
+            </tr>
+            <tr>
+              <td>background-color</td>
+              <td>white</td>
+            </tr>
+            <tr>
+              <td>box-shadow</td>
+              <td>0px 2px 0px 1px #e5e5e5</td>
+            </tr>
+          </table>
+
+          <hr>
+
+          <h3>Set rules for nested containers</h3>
+
+          <div id="goals__container">
+            <div class="goalsHead">
+              <div class="container-head">
+                <img src="./images/assessment_icon.svg" alt="">
+                <h1>Heading</h1>
+              </div>
+            </div>
+            <div id="container__background">
+              <article class="goal__container">
+                <div class="goal-buttons__container">
+                  <span class="goal-type">Communiceren</span>
+                  <img src="./images/Apply.svg" alt=""><span class="goal-type2">Verbeteren</span><span class="goal-estimate">12 uur resterend</span>
+                </div>
+                <div>
+                  <p>Communicate more over slack</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <p>Containers nested inside another container get grouped inside another container with a light grey background and border radius.</p>
+
+          <table style="width:100%">
+            <tr>
+              <th>Property</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td>padding</td>
+              <td>10 px</td>
+            </tr>
+            <tr>
+              <td>background-color</td>
+              <td>#f7f7f7</td>
+            </tr>
+            <tr>
+              <td>border-radius</td>
+              <td>10 px</td>
+            </tr>
+          </table>
+
+          <h4>Cards within the container</h4>
+
+          <table style="width:100%">
+            <tr>
+              <th>Property</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td>margin</td>
+              <td>10 px</td>
+            </tr>
+            <tr>
+              <td>border-radius</td>
+              <td>10 px</td>
+            </tr>
+          </table>
+
+          <h4>Items within the cards</h4>
+          <table style="width:100%">
+            <tr>
+              <th>Property</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td>padding</td>
+              <td>0.75em</td>
+            </tr>
+          </table>
+
+          <hr>
+
+          <h3>Compliment "cards"</h3>
+          <div id="activity__container">
+            <div class="new__card">
+              <div class="new__card_sender">
+                <img src="./images/random2.jpg" alt="">
+              </div>
+              <div class="new__card_content">
+                <div class="new__card_header">
+                  <h4>Nirantar dev "the guru" krijgt een compliment van Dalton</h4>
+                  <span>1 week geleden</span>
+                </div>
+                <div class="new__card_message">
+                  <p>
+                    New test message!
+
+                    <span class="more__text hide">
+                        Test Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur atque beatae debitis dolores eaque eos illum
+                    </span>
+                  </p>
+                </div>
+                <div class="new__card_receivers">
+                  <img src="./images/random4.jpg" alt="">
+                  <img src="./images/random2.jpg" alt="">
+                  <img src="./images/random3.jpg" alt="">
+                  <img src="./images/reinier.jpg" alt="">
+                  <div class="receivers_tooltip">
+                    <h4>+2</h4>
+                  </div>
+                </div>
+                <div class="expanded__receivers hide">
+                  <div class="expanded__item">
+                    <img src="./images/random4.jpg" alt="">
+                    <p>Lex</p>
+                  </div>
+                  <div class="expanded__item">
+                    <img src="./images/random2.jpg" alt="">
+                    <p>Tim</p>
+                  </div>
+                  <div class="expanded__item">
+                    <img src="./images/random3.jpg" alt="">
+                    <p>Anna</p>
+                  </div>
+                  <div class="expanded__item">
+                    <img src="./images/reinier.jpg" alt="">
+                    <p>Reinier</p>
+                  </div>
+                  <div class="expanded__item">
+                    <img src="./images/reinier.jpg" alt="">
+                    <p>Reinier</p>
+                  </div>
+                  <div class="expanded__item">
+                    <img src="./images/reinier.jpg" alt="">
+                    <p>Reinier</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4>Styling justification</h4>
+          <p>The red bar lets users know this is a compliment and should only be implementen on cards containing compliment data.</p>
+          <p>the card displays up to 4 photos, photos exceding that amount get labeled as +X and are shown upon clicking the card</p>
+
+          <hr>
+
         </div>
       </div>
-
-      <p>Containers nested inside another container get grouped inside another container with a light grey background and border radius.</p>
-
-      <table style="width:100%">
-        <tr>
-          <th>Property</th>
-          <th>Value</th>
-        </tr>
-        <tr>
-          <td>padding</td>
-          <td>10 px</td>
-        </tr>
-        <tr>
-          <td>background-color</td>
-          <td>#f7f7f7</td>
-        </tr>
-        <tr>
-          <td>border-radius</td>
-          <td>10 px</td>
-        </tr>
-      </table>
-
     </div>
+</div>
 </body>
 
 </html>
+<script src="styleguide.js"></script>
+<script src="header.js"></script>
