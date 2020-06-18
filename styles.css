@@ -18,6 +18,10 @@
   flex-wrap: wrap;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 hr{
   margin-top: 3em;
 }
@@ -181,7 +185,7 @@ span {
 }
 
 #activity__container {
-  width: 60%;
+  width: 100%;
   margin: auto;
   background-color: #f7f7f7;
   border-radius: 10px;
